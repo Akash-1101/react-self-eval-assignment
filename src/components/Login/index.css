@@ -1,0 +1,106 @@
+.main-bg-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.con1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.heading1{
+    font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+color: black;
+}
+.para1{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.con2{
+    width: 180px;
+height: 30px;
+display: flex;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.con3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+}
+.con4{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: space-between;
+}
+.from-div-container{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+}
+.form-container{
+    padding: 20px;
+}
+.emailEl{
+    margin: 6px;
+}
+.inputEl{
+    margin:6px;
+    background: #EAEAEA;
+    border-radius: 8px;
+    padding: 10px;
+    width:300px;
+    border:0px ;
+}
+.para2{
+    color: rgb(15, 114, 196);
+    margin: 6px;
+    cursor: pointer;
+}
+.signinBtn{
+    background-color: black;
+    color:white;
+    padding:10px;
+    border-radius: 8px;
+    margin: 6px;
+    border:0px;
+    width: 300px;
+    cursor: pointer;
+}
+.spanEl{
+    color:rgb(34, 102, 197);
+    cursor: pointer;
+}
+.google-img{
+    height: 30px;
+    margin: 5px;
+}
