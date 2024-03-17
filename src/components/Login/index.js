@@ -1,5 +1,5 @@
 import { Component } from "react";
-// import {Redirect} from "react-router-dom"
+import {Redirect} from "react-router-dom"
 import "./index.css"
 
 class Login extends Component{
@@ -17,7 +17,7 @@ class Login extends Component{
     onclickSignIn=()=>{
         const {email,password}=this.state
         if(email==="akash" && password==="12345"){
-            console.log("hi")
+           <Redirect to="/dashboard"/>
         }
     }
 
