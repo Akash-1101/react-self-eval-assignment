@@ -6,10 +6,10 @@
 .left-side-bar-container{
     background-color: black;
     color:white;
-    width: 25vw;
+    width: 30vw;
     padding: 20px;
     border-radius: 10px;
-    height: 100vh;
+    height: 140vh;
 
 }
 .dashboard-img{
@@ -25,10 +25,14 @@
     display: flex;
     justify-content: space-between;
     width: 70vw;
+    height: 50px;
+    margin-top:0px;
 }
 .main-con2{
     display: flex;
     align-items: center;
+    padding:3;
+    border-radius: 5px;
 }
 .main-con3{
     display:flex;
@@ -44,6 +48,9 @@
     padding: 20px;
 }
 .totalRevCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #DDEFE0;
     border-radius: 20px;
     width:200px;
@@ -53,6 +60,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 33px;
+height: 130px;
 /* identical to box height */
 
 color: #000000;
@@ -61,4 +69,69 @@ color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 200px;
+    
+}
+.totaltransaction{
+    background: #F4ECDD;
+    
+
+
+}
+.totalLikes{
+    background: #EFDADA;
+}
+.totalUser{
+    background: #DEE0EF;
+}
+.rev-img{
+    height: 25px;
+    align-self: flex-end;
+    margin: 5px;
+
+}
+.p1{
+    margin: 1px;
+}
+.searchInputEl{
+    border: none;
+    padding: 10px;
+
+}
+.activies-container{
+    background-color: white;
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+    height: 300px;
+    margin-top: 10px;
+}
+.bottom-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todayheading{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+
+}
+.btn-containers{
+    width: 45%;
+}
+.btm-c2-1{
+    border-left: 5px solid #9BDD7C;
+    padding:10px;
+    margin: 5px;
+}
+.btm-c2-2{
+    border-left: 5px solid #6972C3;
+    padding:10px;
+    margin: 5px;
 }

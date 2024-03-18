@@ -1,10 +1,11 @@
 import { Component } from "react";
-// import {Redirect} from "react-router-dom"
+import {Redirect} from "react-router-dom"
+
 import "./index.css"
 
 class Login extends Component{
 
-    state={email:"",password:""}
+    state={email:"",password:"",isLoggedIn: false}
 
     onChangeEmailInput=(event)=>{
         this.setState({email:event.target.value})
@@ -16,13 +17,25 @@ class Login extends Component{
 
     onclickSignIn=()=>{
         const {email,password}=this.state
-        if(email==="akash" && password==="12345"){
-            console.log("hi")
+        console.log(email,password)
+        if(email==="rahul" && password==="rahul"){
+            this.setState({ isLoggedIn: true });
+        }else{
+            this.setState({ isLoggedIn: true })
         }
+        
     }
 
 
     render(){
+        const { isLoggedIn } = this.state;
+
+        // Redirect to dashboard if logged in
+        if (isLoggedIn) {
+            const{history}=this.props
+            history.replace("/dashboard")
+            return <Redirect to="/dashboard" />;
+        }
         return (
             <div className="main-bg-container">
                 <div className="con1">
@@ -45,8 +58,9 @@ class Login extends Component{
                     <div className="from-div-container">
                         <div className="form-container">
                             <label className="emailEl">Email address</label><br/>
-                            <input onChange={this.onChangeEmailInput} className="inputEl" placeholder="Enter your Email " type="text" /><br/>
+                            <input onChange={this.onChangeEmailInput} className="inputEl" placeholder="rahul " type="text" /><br/>
                             <label className="emailEl">Password</label><br/>
+                            <p>Password: rahul</p>
                             <input onChange={this.onChangepasswordInput} className="inputEl" placeholder="Enter the password" type="password"/><br/>
                             <p className="para2">Forgot Password ?</p><br/>
                             <button onClick={this.onclickSignIn} type="button" className="signinBtn">Sign In</button>
