@@ -55,9 +55,9 @@ class Login extends Component{
                     <div className="from-div-container">
                         <div className="form-container">
                             <label className="emailEl">Email address</label><br/>
-                            <input onChange={this.onChangeEmailInput} className="inputEl" placeholder="rahul " type="text" /><br/>
+                            <input onChange={this.onChangeEmailInput} className="inputEl" placeholder="Enter your email " type="text" /><br/>
                             <label className="emailEl">Password</label><br/>
-                            <p>Password: rahul</p>
+    
                             <input onChange={this.onChangepasswordInput} className="inputEl" placeholder="Enter the password" type="password"/><br/>
                             <p className="para2">Forgot Password ?</p><br/>
                             <button onClick={this.onclickSignIn} type="button" className="signinBtn">Sign In</button>
