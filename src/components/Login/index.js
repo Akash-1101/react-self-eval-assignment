@@ -1,6 +1,9 @@
 import { Component } from "react";
 import {Redirect} from "react-router-dom"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 12c8ee1fe7d37f531c6846cd99ad57b2fdde97bf
 import "./index.css"
 
 class Login extends Component{
@@ -17,11 +20,16 @@ class Login extends Component{
 
     onclickSignIn=()=>{
         const {email,password}=this.state
+<<<<<<< HEAD
         console.log(email,password)
         if(email==="rahul" && password==="rahul"){
             this.setState({ isLoggedIn: true });
         }else{
             this.setState({ isLoggedIn: true })
+=======
+        if(email==="akash" && password==="12345"){
+           <Redirect to="/dashboard"/>
+>>>>>>> 12c8ee1fe7d37f531c6846cd99ad57b2fdde97bf
         }
         
     }
